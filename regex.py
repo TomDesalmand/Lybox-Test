@@ -4,7 +4,7 @@ def regex(string):
     costs = []
     total = 0
     index = 0
-    for i in re.split("EUR |,|€| ", string):
+    for i in re.split(" |,|EUR |€", string):
         if (i.isdigit() and index > string.find("m2") and string.find("/an") != -1):
             costs.append(int(i))
             break
