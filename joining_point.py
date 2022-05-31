@@ -1,8 +1,3 @@
-
-from string import digits
-from traceback import print_tb
-
-
 def add_digits(number):
     total = 0
     for i in number:
